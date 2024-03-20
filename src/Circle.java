@@ -9,6 +9,6 @@ public class Circle {
         double radius = scan.nextDouble(); //반지름 입력받기
 
         System.out.println("원의 둘레:"+(2*PI*radius));
-        System.out.println("원의 넓이:"+(PI*radius*radius));//왜 커밋과 푸쉬가 안될까?
+        System.out.println("원의 넓이:"+(PI*radius*radius));//intellij git commmit push 알려주실분 구함~~~~--->>>>>>>>
     }
 }
