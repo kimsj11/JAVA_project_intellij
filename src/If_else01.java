@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 public class If_else01 {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
@@ -13,5 +15,5 @@ public class If_else01 {
         }else {
             System.out.println(a+", "+b);
         }
-    }s
+    }
 }
