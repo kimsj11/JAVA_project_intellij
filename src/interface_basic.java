@@ -1,12 +1,17 @@
-interface Predator2{
-    String getFood();
+
+abstract class Predator2 extends Aniaml{
+   abstract String getFood();
+
+   void printFood(){ // default를 제거한다. -- 인터페이스에서 추상화 클래스로 변경했기 때문에 method는 더 이상 사용할 수 없습니다.
+       System.out.printf("my food is %s\n", getFood());
+   }
 }
 
 interface Barkable3{
     void bark();
 }
 
-class Rabbit extends Aniaml implements Predator2, Barkable3{
+class Rabbit extends Predator2 implements Barkable3{
     public String getFood(){
         return "apple";
     }
@@ -15,7 +20,7 @@ class Rabbit extends Aniaml implements Predator2, Barkable3{
     }
 }
 
-class Pig extends Aniaml implements Predator2, Barkable3{
+class Pig extends Predator2 implements Barkable3{
     public String getFood(){
         return "banana";
     }
